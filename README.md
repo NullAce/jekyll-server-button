@@ -24,9 +24,6 @@ All methods run `bundle exec jekyll serve` in your workspace directory and open 
 
 To use this extension, you need:
 
-- **Ruby**: Installed on your system
-- **Bundler**: Ruby gem for dependency management (`gem install bundler`)
-- **Jekyll**: Installed via Bundler in your project (`bundle install`)
 - **Jekyll Project**: A valid Jekyll site with a `Gemfile` in your workspace
 
 ### Setup Instructions
@@ -52,36 +49,12 @@ You can access these settings via File → Preferences → Settings and search f
 
 - The extension assumes your Jekyll project uses Bundler (requires a `Gemfile`)
 - Currently only supports the standard `bundle exec jekyll serve` command
-- Requires Ruby and Bundler to be installed and available in your system PATH
-
-## Release Notes
-
-### 0.0.1
-
-Initial release of Jekyll Server Button extension featuring:
-- Status bar button for quick Jekyll server access
-- Activity bar icon with dedicated view
-- Command palette integration
-- Automatic workspace directory detection
-- Customizable port and host settings
-- Additional Jekyll arguments support
-- Stop server functionality
-- Configurable status bar visibility
 
 ---
 
 ## Installation
 
-### For Development/Testing
-1. Clone this repository
-2. Open in VS Code
-3. Run `npm install` to install dependencies
-4. Press `F5` to launch Extension Development Host
-5. Test the extension in the new VS Code window
-
-### For Personal Use
-1. Package the extension: `npm run package`
-2. Install the generated `.vsix` file: `code --install-extension jekyll-server-button-0.0.1.vsix`
+1. Install the  `.vsix` file: `code --install-extension jekyll-server-button-1.0.0.vsix`
 
 ## Usage
 
