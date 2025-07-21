@@ -2,16 +2,16 @@
   "name": "jekyll-server-button",
   "displayName": "Jekyll Server Button",
   "description": "Adds convenient buttons to start Jekyll development server with customizable host and port settings",
-  "version": "0.0.1",
-  "publisher": "your-publisher-name",
+  "version": "1.0.0",
+  "publisher": "NullAce",
   "license": "MIT",
-  "homepage": "https://github.com/your-username/jekyll-server-button#readme",
+  "homepage": "https://github.com/NullAce/jekyll-server-button#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/jekyll-server-button.git"
+    "url": "https://github.com/NullAce/jekyll-server-button.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/jekyll-server-button/issues"
+    "url": "https://github.com/NullAce/jekyll-server-button/issues"
   },
   "keywords": [
     "jekyll",
@@ -39,14 +39,21 @@
         "icon": "$(server)"
       },
       {
-        "command": "jekyll-server-button.startServerCustom",
-        "title": "Jekyll: Start Server with Custom Settings",
-        "icon": "$(settings)"
-      },
-      {
         "command": "jekyll-server-button.stopServer",
         "title": "Jekyll: Stop Server",
         "icon": "$(stop)"
+      },
+      {
+        "command": "jekyll-server-button.editPort",
+        "title": "Edit Port"
+      },
+      {
+        "command": "jekyll-server-button.editHost",
+        "title": "Edit Host"
+      },
+      {
+        "command": "jekyll-server-button.editArgs",
+        "title": "Edit Additional Arguments"
       }
     ],
     "configuration": {
@@ -97,27 +104,10 @@
       ]
     },
     "menus": {
-      "view/title": [
-        {
-          "command": "jekyll-server-button.startServer",
-          "when": "view == jekyllServerView",
-          "group": "navigation@1"
-        },
-        {
-          "command": "jekyll-server-button.startServerCustom",
-          "when": "view == jekyllServerView",
-          "group": "navigation@2"
-        },
-        {
-          "command": "jekyll-server-button.stopServer",
-          "when": "view == jekyllServerView",
-          "group": "navigation@3"
-        }
-      ],
       "view/item/context": [
         {
-          "command": "jekyll-server-button.startServerCustom",
-          "when": "view == jekyllServerView",
+          "command": "jekyll-server-button.editPort",
+          "when": "view == jekyllServerView && viewItem == settingItem",
           "group": "inline"
         }
       ]
