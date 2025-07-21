@@ -26,13 +26,9 @@ To use this extension, you need:
 
 - **Jekyll Project**: A valid Jekyll site with a `Gemfile` in your workspace
 
-### Setup Instructions
+## Installation
 
-1. Navigate to your Jekyll project directory
-2. Ensure you have a `Gemfile` with Jekyll specified
-3. Run `bundle install` to install dependencies
-4. Open the project in VS Code
-5. Use any of the Jekyll Server buttons to start your development server
+1. Install the  `.vsix` file: `code --install-extension jekyll-server-button-1.0.0.vsix`
 
 ## Extension Settings
 
@@ -52,9 +48,7 @@ You can access these settings via File → Preferences → Settings and search f
 
 ---
 
-## Installation
 
-1. Install the  `.vsix` file: `code --install-extension jekyll-server-button-1.0.0.vsix`
 
 ## Usage
 
